@@ -1,0 +1,6 @@
+# Netlify redirects
+# Route form submissions back with query param for success message
+/contact /index.html?submitted=true 200
+
+# Catch-all: route all non-file paths to index.html for SPA behavior
+/*    /index.html   200
