@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Michael Echebi — Cybersecurity & Information Assurance student focused on threat detection, digital forensics, and incident response." />
+  <meta name="author" content="Michael Echebi" />
+  <title>Michael Echebi — Cybersecurity & Information Assurance</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230b0f17'/%3E%3Ctext x='50' y='66' font-family='monospace' font-size='44' font-weight='700' text-anchor='middle' fill='%2338bdf8'%3EM%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__brand-mark">M</span>
+        <span class="nav__brand-text">Michael Echebi</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#resume">Resume</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">Cybersecurity &amp; Information Assurance</p>
+        <h1 class="hero__title">Hi, I'm <span class="accent">Michael Echebi</span>.</h1>
+        <p class="hero__tagline">
+          I build hands-on labs that simulate real adversary behavior, then design detection workflows 
+          that SOC teams use to catch attacks. Bridging offensive testing and blue team operations.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Capstone</a>
+          <a href="assets/Michael_Echebi_Resume.pdf" class="btn btn--ghost" download>
+            Download Resume
+          </a>
+        </div>
+
+        <ul class="hero__chips" aria-label="Core skills">
+          <li>Kali Linux</li>
+          <li>Metasploit</li>
+          <li>Sysmon / SIEM</li>
+          <li>MITRE ATT&amp;CK</li>
+          <li>Wireshark</li>
+          <li>Python</li>
+          <li>Incident Response</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section__heading">
+          <span class="section__label">01 / About</span>
+          <h2>About Me</h2>
+        </div>
+
+        <div class="about">
+          <div class="about__photo">
+            <img src="assets/profile.jpg" alt="Portrait of Michael Echebi" loading="lazy" />
+            <div class="about__photo-name">
+              <strong>Michael Echebi</strong>
+              <span>Cybersecurity &amp; IA Student</span>
+            </div>
+          </div>
+
+          <div class="about__body">
+            <p>
+              I'm a <strong>Cybersecurity &amp; Information Assurance</strong> major
+              at Frostburg State University with a minor in Computer Science.
+              My focus is the defender's side — building isolated labs, simulating real attacks, 
+              and learning to reconstruct adversary behavior from endpoint telemetry.
+            </p>
+            <p>
+              I'm not just running commands — I'm learning why defenders care about each one.
+              My capstone project is a complete kill-chain simulation paired with a SOC-style detection report,
+              showing how I go from "attack successful" to "here's what we detect and how we stop it next time."
+            </p>
+            <p>
+              Beyond the technical side, I serve as a campus and ministry leader, which
+              has strengthened my ability to communicate complex security concepts to non-technical stakeholders — 
+              a skill I bring to every incident briefing and detection writeup.
+            </p>
+            <p>
+              I'm actively seeking <strong>SOC analyst, threat hunting, and incident response internships</strong>.
+            </p>
+
+            <div class="about__meta">
+              <div>
+                <span class="about__meta-label">Location</span>
+                <span class="about__meta-value">Upper Marlboro, MD</span>
+              </div>
+              <div>
+                <span class="about__meta-label">Education</span>
+                <span class="about__meta-value">Frostburg State Univ. — Dec 2026</span>
+              </div>
+              <div>
+                <span class="about__meta-label">Status</span>
+                <span class="about__meta-value">
+                  <span class="dot"></span>Open to internships
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="skills">
+          <h3 class="skills__title">Technical Skills</h3>
+          <div class="skills__grid">
+            <div class="skill">
+              <h4>Security Operations</h4>
+              <p>Threat detection &amp; hunting, log analysis, IOC analysis, SIEM detection rules, MITRE ATT&amp;CK mapping, incident response triage.</p>
+            </div>
+            <div class="skill">
+              <h4>Offensive &amp; Defensive Tools</h4>
+              <p>Metasploit Framework, msfvenom, Microsoft Sysmon, Wireshark, Event Viewer, Kali Linux, VMware, Windows Registry analysis.</p>
+            </div>
+            <div class="skill">
+              <h4>Scripting &amp; Systems</h4>
+              <p>Python, Bash, PowerShell, Linux administration, Windows endpoint &amp; server fundamentals, network protocols.</p>
+            </div>
+            <div class="skill">
+              <h4>Domains</h4>
+              <p>Network security, endpoint security, attack simulation, vulnerability assessment, digital forensics, kill-chain analysis.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education + Experience side by side -->
+        <div class="two-col">
+          <div>
+            <h3 class="subhead">Education</h3>
+            <div class="card">
+              <div class="card__row">
+                <strong>Frostburg State University</strong>
+                <span class="muted">Dec 2026</span>
+              </div>
+              <p class="card__sub">B.A. Cybersecurity &amp; Information Assurance · Minor in Computer Science</p>
+              <p class="card__detail">
+                <span class="muted">Coursework:</span>
+                Network Security · OS Security · Computer &amp; Network Forensics ·
+                Hacking Exposed &amp; Incident Response · Software Security Engineering
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="subhead">Experience</h3>
+
+            <div class="card">
+              <div class="card__row">
+                <strong>Development Associate Intern</strong>
+                <span class="muted">Jun – Aug 2025</span>
+              </div>
+              <p class="card__sub">Young Mothers Inc. · Washington, D.C.</p>
+              <ul class="card__list">
+                <li>Leveraged Excel for data analysis, donor data management, and fundraising tracking.</li>
+                <li>Supported donor engagement initiatives driving organizational growth.</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__row">
+                <strong>Student Intern</strong>
+                <span class="muted">May – Aug 2025</span>
+              </div>
+              <p class="card__sub">The Washington Center · Washington, D.C.</p>
+              <ul class="card__list">
+                <li>Completed structured professional development curriculum: resume, interview prep, branding.</li>
+                <li>Attended weekly seminars with government, nonprofit, and private sector leaders.</li>
+              </ul>
+            </div>
+
+            <div class="card">
+              <div class="card__row">
+                <strong>General Service Marine (E-1)</strong>
+                <span class="muted">Apr 2022 – Jan 2023</span>
+              </div>
+              <p class="card__sub">United States Marine Corps · Parris Island, SC</p>
+              <ul class="card__list">
+                <li>Trained alongside 15+ personnel to attain mission-ready status.</li>
+                <li>Coordinated unit actions using supply databases and strategic planning.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cert + Leadership row -->
+        <div class="two-col">
+          <div>
+            <h3 class="subhead">Certifications</h3>
+            <div class="card card--accent">
+              <div class="card__row">
+                <strong>Cisco — Introduction to Cybersecurity</strong>
+                <span class="muted">Aug 2024</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="subhead">Leadership</h3>
+            <div class="card">
+              <div class="card__row">
+                <strong>Coordinator</strong>
+                <span class="muted">Aug 2023 – Present</span>
+              </div>
+              <p class="card__sub">100% Triumph Campus Ministry · Frostburg, MD</p>
+              <ul class="card__list">
+                <li>Mentored 50+ students through events, retreats, and weekly Bible studies for 100+ attendees.</li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card__row">
+                <strong>Public Relations Officer</strong>
+                <span class="muted">Aug – Dec 2024</span>
+              </div>
+              <p class="card__sub">African Student Association · Frostburg State Univ.</p>
+              <ul class="card__list">
+                <li>Doubled event attendance through targeted Instagram strategy and student-club partnerships.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESUME ============ -->
+    <section id="resume" class="section section--alt">
+      <div class="container">
+        <div class="section__heading">
+          <span class="section__label">02 / Resume</span>
+          <h2>Resume</h2>
+        </div>
+
+        <div class="resume">
+          <div class="resume__actions">
+            <p>Click here to download my resume.</p>
+            <div class="resume__buttons">
+              <a class="btn btn--primary" href="assets/Michael_Echebi_Resume.pdf" target="_blank" rel="noopener">
+                Open in New Tab
+              </a>
+              <a class="btn btn--ghost" href="assets/Michael_Echebi_Resume.pdf" download>
+                Download PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECT ============ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section__heading">
+          <span class="section__label">03 / Project</span>
+          <h2>Featured Project</h2>
+        </div>
+
+        <article class="project">
+          <header class="project__header">
+            <div class="project__tag-row">
+              <span class="tag tag--filled">Capstone Project</span>
+              <span class="muted">April 2026</span>
+            </div>
+            <h3 class="project__title">
+              Kali → Windows Attack Simulation with Real-Time Sysmon Detection
+            </h3>
+            <p class="project__lede">
+              A full <strong>cyber kill-chain simulation</strong> in an isolated VMware lab — Kali Linux as the attacker,
+              Windows 11 as the victim — paired with <strong>real-time endpoint telemetry</strong> via Microsoft Sysmon
+              and a SOC-style detection write-up mapped to MITRE ATT&amp;CK.
+            </p>
+            <p class="project__lede">
+              <strong>View the full repository:</strong>
+              <a href="https://github.com/mechebi0/kali-windows-attack-simulation" target="_blank" rel="noopener">
+                github.com/mechebi0/kali-windows-attack-simulation
+              </a>
+            </p>
+          </header>
+
+          <!-- Stats row -->
+          <div class="project__stats">
+            <div class="stat">
+              <div class="stat__num">985</div>
+              <div class="stat__lbl">Sysmon Events Captured</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">5</div>
+              <div class="stat__lbl">MITRE Techniques Mapped</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">1</div>
+              <div class="stat__lbl">Full Kill Chain Simulated</div>
+            </div>
+          </div>
+
+          <!-- Two columns: What I built / What I learned -->
+          <div class="project__grid">
+            <div class="project__block">
+              <h4>What I built</h4>
+              <ul>
+                <li>
+                  Designed an <strong>isolated VMware lab</strong> with Kali Linux (attacker) and a Windows 11
+                  endpoint (victim) on a host-only network to safely emulate adversary behavior.
+                </li>
+                <li>
+                  Generated a <strong>TCP/IP reverse-shell payload</strong> with <code>msfvenom</code>,
+                  delivered it to the victim, and established a Meterpreter session via Metasploit's multi-handler.
+                </li>
+                <li>
+                  Performed <strong>post-exploitation enumeration</strong> — system info, user context, network
+                  state — to demonstrate realistic attacker tradecraft after initial access.
+                </li>
+                <li>
+                  Deployed <strong>Microsoft Sysmon</strong> with the SwiftOnSecurity configuration on the
+                  Windows endpoint to produce high-fidelity process, network, and registry telemetry.
+                </li>
+              </ul>
+            </div>
+
+            <div class="project__block">
+              <h4>How I detected it</h4>
+              <ul>
+                <li>
+                  Captured <strong>985 endpoint events</strong> across the kill chain and analyzed them in
+                  Event Viewer to surface Indicators of Compromise.
+                </li>
+                <li>
+                  Mapped IOCs to <strong>MITRE ATT&amp;CK</strong> techniques and authored corresponding
+                  SIEM-style detection rules (process anomalies, suspicious child processes, non-standard ports).
+                </li>
+                <li>
+                  Documented findings in a <strong>SOC-style incident response report</strong> covering
+                  timeline reconstruction, detection logic, and recommended hardening.
+                </li>
+                <li>
+                  Validated detection coverage end-to-end — every step of the simulated intrusion produced
+                  at least one actionable telemetry artifact.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ATT&CK techniques -->
+          <div class="project__section">
+            <h4>MITRE ATT&amp;CK Techniques Mapped</h4>
+            <div class="tech-grid">
+              <div class="tech">
+                <div class="tech__id">T1204</div>
+                <div class="tech__name">User Execution</div>
+              </div>
+              <div class="tech">
+                <div class="tech__id">T1059</div>
+                <div class="tech__name">Command &amp; Scripting Interpreter</div>
+              </div>
+              <div class="tech">
+                <div class="tech__id">T1562</div>
+                <div class="tech__name">Impair Defenses</div>
+              </div>
+              <div class="tech">
+                <div class="tech__id">T1571</div>
+                <div class="tech__name">Non-Standard Port</div>
+              </div>
+              <div class="tech">
+                <div class="tech__id">T1105</div>
+                <div class="tech__name">Ingress Tool Transfer</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools used -->
+          <div class="project__section">
+            <h4>Tools &amp; Stack</h4>
+            <ul class="chip-list">
+              <li>Kali Linux</li>
+              <li>Metasploit Framework</li>
+              <li>msfvenom</li>
+              <li>Microsoft Sysmon</li>
+              <li>SwiftOnSecurity Config</li>
+              <li>Wireshark</li>
+              <li>Event Viewer</li>
+              <li>VMware</li>
+              <li>MITRE ATT&amp;CK</li>
+              <li>Windows 11</li>
+            </ul>
+          </div>
+
+          <!-- Outcome -->
+          <div class="project__outcome">
+            <h4>Outcome</h4>
+            <p>
+              Demonstrated end-to-end blue-team workflow: <em>simulate adversary behavior → collect telemetry →
+              detect, attribute, and report.</em> The project is the kind of self-contained exercise
+              recruiters and SOC team leads can read in a few minutes and immediately understand my
+              hands-on detection-engineering ability. The GitHub repo includes 30+ files: evidence screenshots,
+              detection rules (Splunk/Sigma/KQL/Wazuh), IOC tables, MITRE mappings, and a complete reproduction guide.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section section--alt">
+      <div class="container">
+        <div class="section__heading">
+          <span class="section__label">04 / Contact</span>
+          <h2>Get in Touch</h2>
+        </div>
+
+        <p class="contact__lede">
+          I'm actively seeking SOC analyst, incident response, and threat intelligence opportunities.
+          The fastest way to reach me is email — or send a note below.
+        </p>
+
+        <div class="contact__channels">
+          <a class="contact-card" href="mailto:michaelechebi@gmail.com">
+            <span class="contact-card__label">Email</span>
+            <span class="contact-card__value">michaelechebi@gmail.com</span>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/michael-echebi/" target="_blank" rel="noopener">
+            <span class="contact-card__label">LinkedIn</span>
+            <span class="contact-card__value">linkedin.com/in/michael-echebi</span>
+          </a>
+          <a class="contact-card" href="tel:+12028267804">
+            <span class="contact-card__label">Phone</span>
+            <span class="contact-card__value">(202) 826-7804</span>
+          </a>
+        </div>
+
+        <form
+          class="contact-form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/?submitted=true"
+          onsubmit="return handleFormSubmit(event)"
+        >
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="hidden">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+
+          <div class="contact-form__row">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" required autocomplete="name" />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" required autocomplete="email" />
+            </label>
+          </div>
+          <label>
+            <span>Subject</span>
+            <input type="text" name="subject" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="contact-form__note" id="form-status" hidden>
+            Thanks — your message was sent. I'll get back to you shortly.
+          </p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© <span id="year"></span> Michael Echebi</span>
+      <span class="footer__links">
+        <a href="https://www.linkedin.com/in/michael-echebi/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:michaelechebi@gmail.com">Email</a>
+        <a href="https://github.com/mechebi0/kali-windows-attack-simulation" target="_blank" rel="noopener">Capstone Repo</a>
+      </span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
