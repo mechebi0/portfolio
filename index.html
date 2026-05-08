@@ -25,7 +25,7 @@
       <nav class="nav__links" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#resume">Resume</a>
-        <a href="#projects">Project</a>
+        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </nav>
       <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false">
@@ -39,12 +39,12 @@
     <section id="hero" class="hero">
       <div class="container hero__inner">
         <p class="eyebrow">Cybersecurity &amp; Information Assurance</p>
-        <h1 class="hero__title">Hi, I'm <span class="accent">Michael Echebi</span>.</h1>
+        <h1 class="hero__title">Hey, I’m <span class="accent">Michael Echebi</span>.</h1>
         <p class="hero__tagline">
-           Cybersecurity Student & Aspiring Defense Analyst
+          Cybersecurity Student & Aspiring Defense Analyst
         </p>
         <div class="hero__cta">
-          <a href="#projects" class="btn btn--primary">View Capstone</a>
+          <a href="#projects" class="btn btn--primary">View Projects</a>
           <a href="assets/Michael_Echebi_Resume.pdf" class="btn btn--ghost" download>
             Download Resume
           </a>
@@ -92,11 +92,10 @@
             </p>
             <p>
               Beyond the technical side, I serve as a campus and ministry leader, which
-              has strengthened my ability to communicate complex security concepts to non-technical stakeholders — 
-              a skill I bring to every incident briefing and detection writeup.
+              has strengthened my ability to communicate complex security concepts to non-technical stakeholders.
             </p>
             <p>
-              I'm actively seeking <strong>SOC analyst, threat hunting, and incident response internships</strong>.
+              I'm actively seeking <strong>SOC analyst, threat hunting, and incident response</strong> opportunities.
             </p>
 
             <div class="about__meta">
@@ -159,7 +158,6 @@
 
           <div>
             <h3 class="subhead">Experience</h3>
-
             <div class="card">
               <div class="card__row">
                 <strong>Development Associate Intern</strong>
@@ -262,10 +260,55 @@
     <section id="projects" class="section">
       <div class="container">
         <div class="section__heading">
-          <span class="section__label">03 / Project</span>
-          <h2>Featured Project</h2>
+          <span class="section__label">03 / Projects</span>
+          <h2>Featured Projects</h2>
         </div>
 
+        <!-- New Portfolio Project (On Top) -->
+        <article class="project">
+          <header class="project__header">
+            <div class="project__tag-row">
+              <span class="tag tag--filled">Personal Project</span>
+              <span class="muted">June 2025 – Present</span>
+            </div>
+            <h3 class="project__title">
+              Michael Echebi's Cybersecurity Portfolio Website
+            </h3>
+            <p class="project__lede">
+              A modern, responsive personal portfolio website built to showcase my cybersecurity projects, skills, and experience for recruiters and hiring managers.
+            </p>
+            <div style="margin: 2rem 0;">
+              <a href="https://mechebi0.github.io/portfolio/" target="_blank" rel="noopener" class="btn btn--primary">
+                View Live Site
+              </a>
+              <a href="https://github.com/mechebi0" target="_blank" rel="noopener" class="btn btn--ghost" style="margin-left: 1rem;">
+                View GitHub
+              </a>
+            </div>
+          </header>
+
+          <div class="project__section">
+            <h4>Key Features</h4>
+            <ul>
+              <li>Designed and developed a clean, professional portfolio tailored for cybersecurity roles.</li>
+              <li>Includes detailed project breakdowns, technical skills, resume download, and contact form.</li>
+              <li>Fully responsive and optimized for recruiters.</li>
+              <li>Hosted on GitHub Pages.</li>
+            </ul>
+          </div>
+
+          <div class="project__section">
+            <h4>Stack</h4>
+            <p>HTML, CSS, JavaScript, GitHub Pages</p>
+          </div>
+
+          <div class="project__outcome">
+            <h4>Outcome</h4>
+            <p>Created a strong professional online presence that effectively highlights my technical skills and projects.</p>
+          </div>
+        </article>
+
+        <!-- Original Kali Capstone -->
         <article class="project">
           <header class="project__header">
             <div class="project__tag-row">
@@ -305,68 +348,35 @@
           <div class="project__section">
             <h4>How I Detected It</h4>
             <ul>
-              <li>
-                Captured <strong>985 endpoint events</strong> across the kill chain and analyzed them in
-                Event Viewer to surface Indicators of Compromise.
-              </li>
-              <li>
-                Mapped IOCs to <strong>MITRE ATT&amp;CK</strong> techniques and authored corresponding
-                SIEM-style detection rules (Splunk/Sigma/KQL/Wazuh for process anomalies, suspicious child processes, non-standard ports).
-              </li>
-              <li>
-                Documented findings in a <strong>SOC-style incident response report</strong> covering
-                timeline reconstruction, detection logic, and recommended hardening.
-              </li>
-              <li>
-                Validated detection coverage end-to-end — every step of the simulated intrusion produced
-                at least one actionable telemetry artifact.
-              </li>
+              <li>Captured <strong>985 endpoint events</strong> across the kill chain and analyzed them in Event Viewer.</li>
+              <li>Mapped IOCs to <strong>MITRE ATT&amp;CK</strong> techniques and authored SIEM detection rules.</li>
+              <li>Documented findings in a SOC-style incident response report.</li>
+              <li>Validated detection coverage end-to-end.</li>
             </ul>
           </div>
 
           <div class="project__section">
             <h4>MITRE ATT&amp;CK Techniques Mapped</h4>
             <div class="tech-grid">
-              <div class="tech">
-                <div class="tech__id">T1204</div>
-                <div class="tech__name">User Execution</div>
-              </div>
-              <div class="tech">
-                <div class="tech__id">T1059</div>
-                <div class="tech__name">Command &amp; Scripting Interpreter</div>
-              </div>
-              <div class="tech">
-                <div class="tech__id">T1562</div>
-                <div class="tech__name">Impair Defenses</div>
-              </div>
-              <div class="tech">
-                <div class="tech__id">T1571</div>
-                <div class="tech__name">Non-Standard Port</div>
-              </div>
-              <div class="tech">
-                <div class="tech__id">T1105</div>
-                <div class="tech__name">Ingress Tool Transfer</div>
-              </div>
+              <div class="tech"><div class="tech__id">T1204</div><div class="tech__name">User Execution</div></div>
+              <div class="tech"><div class="tech__id">T1059</div><div class="tech__name">Command &amp; Scripting Interpreter</div></div>
+              <div class="tech"><div class="tech__id">T1562</div><div class="tech__name">Impair Defenses</div></div>
+              <div class="tech"><div class="tech__id">T1571</div><div class="tech__name">Non-Standard Port</div></div>
+              <div class="tech"><div class="tech__id">T1105</div><div class="tech__name">Ingress Tool Transfer</div></div>
             </div>
           </div>
 
           <div class="project__section">
             <h4>Tools &amp; Stack</h4>
-            <p>
-              Kali Linux · Metasploit Framework · msfvenom · Microsoft Sysmon · SwiftOnSecurity Config · 
-              Wireshark · Event Viewer · VMware · MITRE ATT&amp;CK · Windows 11
-            </p>
+            <p>Kali Linux · Metasploit Framework · Microsoft Sysmon · Wireshark · VMware · MITRE ATT&amp;CK · Windows 11</p>
           </div>
 
           <div class="project__outcome">
             <h4>Outcome</h4>
-            <p>
-              Demonstrated end-to-end blue-team workflow: <em>simulate adversary behavior → collect telemetry → 
-              detect, attribute, and report.</em> The GitHub repo includes 30+ files: evidence screenshots,
-              detection rules (Splunk/Sigma/KQL/Wazuh), IOC tables, MITRE mappings, and a complete reproduction guide.
-            </p>
+            <p>Demonstrated end-to-end blue-team workflow from attack simulation to detection and reporting.</p>
           </div>
         </article>
+
       </div>
     </section>
 
@@ -441,7 +451,7 @@
       <span class="footer__links">
         <a href="https://www.linkedin.com/in/michael-echebi/" target="_blank" rel="noopener">LinkedIn</a>
         <a href="mailto:michaelechebi@gmail.com">Email</a>
-        <a href="https://github.com/mechebi0/kali-windows-attack-simulation" target="_blank" rel="noopener">Capstone Repo</a>
+        <a href="https://github.com/mechebi0" target="_blank" rel="noopener">GitHub</a>
       </span>
     </div>
   </footer>
