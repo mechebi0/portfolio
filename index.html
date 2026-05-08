@@ -36,7 +36,34 @@
 
   <main>
 
-    <!-- HERO, ABOUT, RESUME, PROJECT SECTIONS UNCHANGED -->
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <p class="eyebrow">Cybersecurity &amp; Information Assurance</p>
+        <h1 class="hero__title">Hi, I'm <span class="accent">Michael Echebi</span>.</h1>
+        <p class="hero__tagline">
+          I build hands-on labs that simulate real adversary behavior, then design detection workflows 
+          that SOC teams use to catch attacks. Bridging offensive testing and blue team operations.
+        </p>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">View Capstone</a>
+          <a href="assets/Michael_Echebi_Resume.pdf" class="btn btn--ghost" download>
+            Download Resume
+          </a>
+        </div>
+
+        <ul class="hero__chips" aria-label="Core skills">
+          <li>Kali Linux</li>
+          <li>Metasploit</li>
+          <li>Sysmon / SIEM</li>
+          <li>MITRE ATT&amp;CK</li>
+          <li>Wireshark</li>
+          <li>Python</li>
+          <li>Incident Response</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ALL OTHER SECTIONS ABOVE CONTACT ARE UNCHANGED -->
 
     <section id="contact" class="section section--alt">
       <div class="container">
@@ -55,7 +82,6 @@
             <span class="contact-card__label">Email</span>
             <span class="contact-card__value">michaelechebi@gmail.com</span>
           </a>
-
           <a class="contact-card" href="https://www.linkedin.com/in/michael-echebi/" target="_blank" rel="noopener">
             <span class="contact-card__label">LinkedIn</span>
             <span class="contact-card__value">linkedin.com/in/michael-echebi</span>
@@ -86,7 +112,6 @@
               <input type="email" name="email" required autocomplete="email" />
             </label>
           </div>
-
           <label>
             <span>Subject</span>
             <input type="text" name="subject" required />
