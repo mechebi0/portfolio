@@ -277,16 +277,15 @@
               Kali → Windows Attack Simulation with Real-Time Sysmon Detection
             </h3>
             <p class="project__lede">
-              A full <strong>cyber kill-chain simulation</strong> in an isolated VMware lab — Kali Linux as the attacker,
-              Windows 11 as the victim — paired with <strong>real-time endpoint telemetry</strong> via Microsoft Sysmon
-              and a SOC-style detection write-up mapped to MITRE ATT&amp;CK.
+              A full <strong>cyber kill-chain simulation</strong> in an isolated VMware lab — Kali Linux attacker, 
+              Windows 11 victim — paired with <strong>real-time endpoint telemetry</strong> via Microsoft Sysmon 
+              and SOC-style detection mapped to MITRE ATT&amp;CK.
             </p>
-            <p class="project__lede">
-              <strong>View the full repository:</strong>
-              <a href="https://github.com/mechebi0/kali-windows-attack-simulation" target="_blank" rel="noopener">
-                github.com/mechebi0/kali-windows-attack-simulation
+            <div style="margin: 2rem 0;">
+              <a href="https://github.com/mechebi0/kali-windows-attack-simulation" target="_blank" rel="noopener" class="btn btn--primary">
+                View on GitHub
               </a>
-            </p>
+            </div>
           </header>
 
           <div class="project__stats">
@@ -304,50 +303,26 @@
             </div>
           </div>
 
-          <div class="project__grid">
-            <div class="project__block">
-              <h4>What I built</h4>
-              <ul>
-                <li>
-                  Designed an <strong>isolated VMware lab</strong> with Kali Linux (attacker) and a Windows 11
-                  endpoint (victim) on a host-only network to safely emulate adversary behavior.
-                </li>
-                <li>
-                  Generated a <strong>TCP/IP reverse-shell payload</strong> with <code>msfvenom</code>,
-                  delivered it to the victim, and established a Meterpreter session via Metasploit's multi-handler.
-                </li>
-                <li>
-                  Performed <strong>post-exploitation enumeration</strong> — system info, user context, network
-                  state — to demonstrate realistic attacker tradecraft after initial access.
-                </li>
-                <li>
-                  Deployed <strong>Microsoft Sysmon</strong> with the SwiftOnSecurity configuration on the
-                  Windows endpoint to produce high-fidelity process, network, and registry telemetry.
-                </li>
-              </ul>
-            </div>
-
-            <div class="project__block">
-              <h4>How I detected it</h4>
-              <ul>
-                <li>
-                  Captured <strong>985 endpoint events</strong> across the kill chain and analyzed them in
-                  Event Viewer to surface Indicators of Compromise.
-                </li>
-                <li>
-                  Mapped IOCs to <strong>MITRE ATT&amp;CK</strong> techniques and authored corresponding
-                  SIEM-style detection rules (process anomalies, suspicious child processes, non-standard ports).
-                </li>
-                <li>
-                  Documented findings in a <strong>SOC-style incident response report</strong> covering
-                  timeline reconstruction, detection logic, and recommended hardening.
-                </li>
-                <li>
-                  Validated detection coverage end-to-end — every step of the simulated intrusion produced
-                  at least one actionable telemetry artifact.
-                </li>
-              </ul>
-            </div>
+          <div class="project__section">
+            <h4>How I Detected It</h4>
+            <ul>
+              <li>
+                Captured <strong>985 endpoint events</strong> across the kill chain and analyzed them in
+                Event Viewer to surface Indicators of Compromise.
+              </li>
+              <li>
+                Mapped IOCs to <strong>MITRE ATT&amp;CK</strong> techniques and authored corresponding
+                SIEM-style detection rules (Splunk/Sigma/KQL/Wazuh for process anomalies, suspicious child processes, non-standard ports).
+              </li>
+              <li>
+                Documented findings in a <strong>SOC-style incident response report</strong> covering
+                timeline reconstruction, detection logic, and recommended hardening.
+              </li>
+              <li>
+                Validated detection coverage end-to-end — every step of the simulated intrusion produced
+                at least one actionable telemetry artifact.
+              </li>
+            </ul>
           </div>
 
           <div class="project__section">
@@ -378,27 +353,17 @@
 
           <div class="project__section">
             <h4>Tools &amp; Stack</h4>
-            <ul class="chip-list">
-              <li>Kali Linux</li>
-              <li>Metasploit Framework</li>
-              <li>msfvenom</li>
-              <li>Microsoft Sysmon</li>
-              <li>SwiftOnSecurity Config</li>
-              <li>Wireshark</li>
-              <li>Event Viewer</li>
-              <li>VMware</li>
-              <li>MITRE ATT&amp;CK</li>
-              <li>Windows 11</li>
-            </ul>
+            <p>
+              Kali Linux · Metasploit Framework · msfvenom · Microsoft Sysmon · SwiftOnSecurity Config · 
+              Wireshark · Event Viewer · VMware · MITRE ATT&amp;CK · Windows 11
+            </p>
           </div>
 
           <div class="project__outcome">
             <h4>Outcome</h4>
             <p>
               Demonstrated end-to-end blue-team workflow: <em>simulate adversary behavior → collect telemetry →
-              detect, attribute, and report.</em> The project is the kind of self-contained exercise
-              recruiters and SOC team leads can read in a few minutes and immediately understand my
-              hands-on detection-engineering ability. The GitHub repo includes 30+ files: evidence screenshots,
+              detect, attribute, and report.</em> The GitHub repo includes 30+ files: evidence screenshots,
               detection rules (Splunk/Sigma/KQL/Wazuh), IOC tables, MITRE mappings, and a complete reproduction guide.
             </p>
           </div>
